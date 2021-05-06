@@ -245,3 +245,68 @@ h3 {
         width: 910px;
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    .main-header {
+        width: 100%;
+    }
+    .logo img{
+        position:center;
+        width: 200px;
+        height: 200px;
+    }
+
+    .navigation a {
+        padding: 20px;
+        font-size: 75px;
+        margin-top: 20px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 80px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+
+    .bg{
+        width: 100%;
+    }
+    .news img {
+        width: 100%;
+        position: center;
+    }
+    .news{
+        width: 100%;
+    }
+
+    .p{
+        font-size:50px;
+        text-align: justify;
+    }
+    .rooms{
+        width:100%;
+        height: 260px;
+        margin:0;
+    }
+    .picturerow img{
+        float: left;
+        width: 180px;
+    }
+    .picturerow::after{
+        flex: none;
+    }
+    .snip1189{
+        width: 100%;
+        margin-top:0;
+    }
+    .foot{
+        width:100%;
+    }
+}

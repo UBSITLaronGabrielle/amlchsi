@@ -34,7 +34,7 @@ body {
 
 .navigation a {
   padding: 0 .75em;
-  font-size: .7em;
+  font-size: 35px;
 }
 
 .navigation a:hover {
@@ -96,10 +96,9 @@ h3 {
 
 .rooms{
     width: 100%;
-    height: 370px;
+    height: 305.5px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 10px;
 }
   
 .row_pic_labels{
@@ -118,7 +117,7 @@ h3 {
 }	
 .picturerow img{
     float: left;
-    width: 320px;
+    width: 224.8px;
 }
 
 .picturerow::after{
@@ -151,15 +150,40 @@ h3 {
     margin: 0%;
 }
 
-.about{
-    text-align: center;
-    max-width: 100%;
-    font-size: larger;
-    width: 900px;
-    margin: 0 auto;
+.container {
+  background-attachment: fixed;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
 }
 
-@media only screen and (max-width: 1366px) {
+.text-box {
+  text-align: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+.hover {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  transition: transform 300ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+
+.hover p{
+    font-size: 40px;
+}
+
+.hover:hover {
+  background: rgba(8, 47, 78, 0.8);
+  transform: scale(1.1, 1.1);
+  border: 2px rgba(8, 47, 78, 0.8);
+}
+
+@media screen and(max-width: 1366px) {
     .bg{
         background-image: url(Images/agoobg.jpeg);
         height: 100% 100%;
@@ -169,7 +193,7 @@ h3 {
         background-size:100%;
     }
     .rooms{
-        height: 310px;
+        height: 350px;
     }
     .picturerow img{
         float: left;
@@ -181,9 +205,9 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .main-header {
-        width: 910px;
+        width: 100%;
     }
     .logo img{
         position:center;
@@ -208,18 +232,18 @@ h3 {
     }
 
     .wrapper{
-        width:910px;
+        width:100%;
     }
 
     .bg{
-        width: 910px;
+        width: 100%;
     }
     .news img {
         width: 100%;
         position: center;
     }
     .news{
-        width: 910px;
+        width: 100%;
     }
 
     .p{
@@ -227,7 +251,7 @@ h3 {
         text-align: justify;
     }
     .rooms{
-        width: 910px;
+        width: 100%;
         height: 200px;
     }
     .picturerow img{
@@ -238,15 +262,15 @@ h3 {
         flex: none;
     }
     .snip1189{
-        width: 910px;
+        width: 100%;
         margin-top: 32px;
     }
     .foot{
-        width: 910px;
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .main-header {
         width: 100%;
     }
@@ -292,12 +316,12 @@ h3 {
     }
     .rooms{
         width:100%;
-        height: 260px;
+        height: 400px;
         margin:0;
     }
     .picturerow img{
         float: left;
-        width: 180px;
+        width: 100%;
     }
     .picturerow::after{
         flex: none;

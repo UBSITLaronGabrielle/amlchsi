@@ -8,19 +8,19 @@ body {
   margin: 0;
   padding: 0px;
   color: rgb(255, 255, 255);
-  font: 30px 'Crimson Text', serif;
-  background-color: #1b1757;
+  font: 20px 'Raleway',arial, sans-serif;
+  background-color: #ffffff;
 }
 
 .main-header {
   text-align: center;
-  background: #2d2170;
+  background: #100972;
   width: 100%;
 }
 
 .logo img{
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     position:left;
     margin-top: 15px;
     margin-left: 10px;
@@ -34,7 +34,7 @@ body {
 
 .navigation a {
   padding: 0 .75em;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .navigation a:hover {
@@ -46,20 +46,18 @@ body {
   overflow: hidden;
 }
 h2{
-    font-family: 'Crimson Text',serif;
     text-align: center;
-    font-size: 70px;
+    font-size: 40px;
     margin: 0%;
-    text-shadow: 2px 2px #1b1757;
+    text-shadow: 2px 2px #100972;
     background: rgba(0, 0, 0, 0.5);
 }
     
 h3 {
-    font-family: 'Crimson Text',serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
-    text-shadow: 2px 2px #1b1757;
+    text-shadow: 2px 2px #100972;
     background: rgba(0, 0, 0, 0.5);
 }
 .wrapper {
@@ -68,11 +66,21 @@ h3 {
 }
 .bg{
     background-image: url(Images/agoobg.jpeg);
-    height: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:top;
     background-size:100%;
+    height: 200px;
+    line-height: 200px;
+}
+
+span{
+    max-width: 100%;
+    width: 1440px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
 }
 
 .news {
@@ -82,17 +90,15 @@ h3 {
 	vertical-align: top;
 	width: 100%;
     color: rgb(255, 255, 255);
-    background-color: #2d2170;
+    background-color: #100972;
     font-weight: lighter;
 }
 .news img {
-	width: 550px;
+	width: 400px;
 	float: left;
 	margin-right: 10px;
 }
-.news .picture {
-	text-align: center;
-}
+.news .picture,
 
 .rooms{
     width: 100%;
@@ -139,6 +145,29 @@ h3 {
     list-style: outside none none;
     text-align: center;
 }
+
+.video{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #100972;
+    color: white;
+}
+.videodesc{
+    max-width: 55%;
+    text-align: justify;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.videoaml{
+    max-width: 45%;
+    width: 560px;
+    height: 409px;
+    border: 0;
+}
+
 .foot{
     font-family: 'Crimson Text',serif;
     font-size: 15px;
@@ -150,37 +179,84 @@ h3 {
     margin: 0%;
 }
 
+h4{
+    font-weight: lighter;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .container {
   background-attachment: fixed;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-size: 16px;
+  margin-top: 25px;
 }
 
 .text-box {
   text-align: center;
   background-size: cover;
   width: auto;
-  height: 200px;
+  height: 100px;
 }
 
 .hover {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  width: 80%;
-  transition: transform 300ms ease-in-out;
-  transition: 600ms ease-in-out;
-}
-
-.hover p{
-    font-size: 40px;
-}
-
-.hover:hover {
-  background: rgba(8, 47, 78, 0.8);
+  width: 90%;
+  background: #100972;
   transform: scale(1.1, 1.1);
   border: 2px rgba(8, 47, 78, 0.8);
+}
+
+.faculty {
+    margin-top: 15px;
+    float: left;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #100972;
+}
+  
+.faculty img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 100%;
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.gallery,
+.gallery:hover,
+.gallery img {
+    max-width: 100%;
+    height: 225px;
+    object-fit: cover;
+    width:337.2px;
+}
+
+.respongal{
+    max-width: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 0;
+    align-items: center;
+    width: 100%;
+}
+.responsive {
+    height: 232px;
+    float: left;
+    align-items: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    flex: none;
 }
 
 @media screen and(max-width: 1366px) {
@@ -313,6 +389,16 @@ h3 {
     .p{
         font-size:50px;
         text-align: justify;
+    }
+    .video{
+        display: inline-block;
+    }
+    .videodesc{
+        max-width: 100%;
+        margin-right: 10px;
+    }
+    .videoaml{
+        max-width: 100%;
     }
     .rooms{
         width:100%;
